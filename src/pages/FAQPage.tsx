@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: 'Missä vastaanottonne sijaitsee?',
-    answer: 'Helsinki: Runeberginkatu 8 C 17 (Kamppi). Kirkkonummi: Purokummuntie 1. Molemmissa ilmainen pysäköinti.',
+    answer: 'Vastaanotto sijaitsee Velnas Hyvinvointikeskuksessa Laajasalossa, osoitteessa Yliskylän puistokatu 11, Kauppakeskus Saaren vastapäätä. Alueella on hyvin kadunvarsipysäköintiä ja Herttoniemestä pääsee kätevästi busseilla 84, 85, 86, 87 ja 88.',
   },
   {
     question: 'Miten perun ajan?',
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'Maksaako hoito Kela-korvausta?',
-    answer: 'Valitettavasti kiropraktikkohoito ei ole Kelan korvaama Suomessa. Meillä käy kuitenkin E-passi.',
+    answer: 'Valitettavasti kiropraktikkohoito ei ole Kelan korvaama Suomessa. Meillä käyvät kuitenkin E-passi, Smartum ja Edenred.',
   },
   {
     question: 'Sattuuko hoito?',
@@ -39,38 +39,38 @@ const faqs = [
 
 export function FAQPage() {
   return (
-    <div className="bg-[#F8FAFA] min-h-[100dvh]">
+    <div className="bg-[#F7F7F7] min-h-[100dvh]">
       <div className="h-[60px] md:h-[68px]" />
 
       <section className="pt-16 md:pt-20 pb-16 md:pb-20 px-6 md:px-12">
         <div className="max-w-[640px] mx-auto">
           <ScrollReveal>
-            <Link to="/" className="group inline-flex items-center gap-2 font-inter text-[13px] text-[rgba(16,42,50,0.7)] hover:text-[#123F3D] transition-colors duration-300 mb-10">
+            <Link to="/" className="group inline-flex items-center gap-2 font-madefor text-[13px] text-[rgba(47,43,54,0.7)] hover:text-[#212121] transition-colors duration-300 mb-10">
               <ArrowLeft size={14} strokeWidth={1.5} className="transition-transform duration-300 group-hover:-translate-x-0.5" />
               Takaisin etusivulle
             </Link>
-            <p className="font-inter text-[10px] font-medium uppercase tracking-[0.2em] text-[rgba(16,42,50,0.7)]/70 mb-5">USEIN KYSYTTYÄ</p>
-            <h1 className="font-cormorant text-[26px] md:text-[32px] text-[#102A32] leading-[1.25] mb-5">Vastauksia yleisimpiin kysymyksiin</h1>
-            <p className="font-inter text-[14px] text-[#102A32]/80 leading-[1.7] mb-12 max-w-[440px]">Jos et löydä vastausta kysymykseesi, soita 040 415 1611.</p>
+            <p className="font-madefor text-[10px] font-medium uppercase tracking-[0.2em] text-[rgba(47,43,54,0.7)]/70 mb-5">USEIN KYSYTTYÄ</p>
+            <h1 className="font-mona text-[26px] md:text-[32px] text-[#2F2B36] leading-[1.25] mb-5">Vastauksia yleisimpiin kysymyksiin</h1>
+            <p className="font-madefor text-[14px] text-[#2F2B36]/80 leading-[1.7] mb-12 max-w-[440px]">Jos et löydä vastausta kysymykseesi, soita 045 676 8408.</p>
           </ScrollReveal>
 
           <div className="space-y-0">
             {faqs.map((faq, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
-                <div className="border-t border-[#123F3D]/[0.08] py-6">
-                  <h3 className="font-inter text-[16px] font-semibold text-[#102A32] leading-[1.5] mb-3">{faq.question}</h3>
-                  <p className="font-inter text-[14px] text-[rgba(16,42,50,0.7)] leading-[1.75]">{faq.answer}</p>
+                <div className="border-t border-[#212121]/[0.08] py-6">
+                  <h3 className="font-madefor text-[16px] font-semibold text-[#2F2B36] leading-[1.5] mb-3">{faq.question}</h3>
+                  <p className="font-madefor text-[14px] text-[rgba(47,43,54,0.7)] leading-[1.75]">{faq.answer}</p>
                 </div>
               </ScrollReveal>
             ))}
-            <div className="border-t border-[#123F3D]/[0.08]" />
+            <div className="border-t border-[#212121]/[0.08]" />
           </div>
 
           <ScrollReveal delay={0.3}>
             <div className="mt-12 text-center">
-              <p className="font-inter text-[14px] text-[#102A32] mb-5">Etkö löytänyt vastausta?</p>
-              <a href="tel:+358404151611" className="inline-flex items-center justify-center px-10 py-[14px] rounded font-inter text-[14px] font-bold bg-[#123F3D] text-white hover:bg-[#00B8B5] transition-colors duration-300">
-                Soita 040 415 1611
+              <p className="font-madefor text-[14px] text-[#2F2B36] mb-5">Etkö löytänyt vastausta?</p>
+              <a href="tel:+358456768408" className="inline-flex items-center justify-center px-10 py-[14px] rounded font-madefor text-[14px] font-bold bg-[#212121] text-white hover:bg-[#212121] transition-colors duration-300">
+                Soita 045 676 8408
               </a>
             </div>
           </ScrollReveal>

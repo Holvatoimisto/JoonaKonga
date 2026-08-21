@@ -25,10 +25,22 @@
     --ring: 0 0% 17%;
     --radius: 0.5rem;
 
+    /* Joona Konga / Velnas brand palette (from kiropraktikkohelsinki.com) */
+    --color-brand: #212121;
+    --color-brand-hover: #000000;
+    --color-dark: #16161A;
+    --color-ink: #2F2B36;
+    --color-accent: #5D5D61;
+    --color-muted-fg: #76747B;
+    --color-surface: #F7F7F7;
+    --color-surface-2: #F1F1F1;
+    --color-border-soft: #EDEDED;
+    --color-ice: #D9D9DE;
+
     /* Premium palette */
-    --color-kingly: #F8FAFA;
-    --color-charcoal: #102A32;
-    --color-iron: #123F3D;
+    --color-kingly: #F7F7F7;
+    --color-charcoal: #2F2B36;
+    --color-iron: #212121;
     --color-white: #FFFFFF;
   }
 
@@ -37,26 +49,26 @@
   }
 
   body {
-    font-family: 'Inter', sans-serif;
-    color: #102A32;
-    background-color: #F8FAFA;
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: #2F2B36;
+    background-color: #F7F7F7;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Geist', 'Inter', sans-serif;
+    font-family: 'Mona Sans', 'Wix Madefor Text', sans-serif;
     font-weight: 500;
   }
 }
 
 @layer utilities {
-  .font-geist {
-    font-family: 'Geist', 'Inter', sans-serif;
+  .font-mona {
+    font-family: 'Mona Sans', 'Wix Madefor Text', sans-serif;
   }
 
-  .font-inter {
-    font-family: 'Inter', sans-serif;
+  .font-madefor {
+    font-family: 'Wix Madefor Text', sans-serif;
   }
 
   .text-charcoal {
